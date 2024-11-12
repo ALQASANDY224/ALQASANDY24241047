@@ -1,6 +1,9 @@
-# Mengonversi suhu dari Fahrenheit ke Celcius
-fahrenheit = float(input("Masukkan suhu dalam Fahrenheit: "))
+def hitung_luas_lingkaran(jari_jari):
+    luas = (jari_jari ** 2)
+    return luas
 
-celcius = (fahrenheit - 32) * 5.0 / 9.0
-print(f"Suhu dalam Celcius: {celcius:.2f}")
+# meminta input dari penguna
+jari_jari = float(input("masukan jari-jari lingkaran"))
+luas = hitung_luas_lingkaran(jari_jari)
 
+print(f"luas lingkaran dengan jar-jari{jari_jari} adalah {luas:.2f}")
